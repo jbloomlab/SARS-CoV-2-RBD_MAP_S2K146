@@ -1,0 +1,105 @@
+# Results of escape mutant selections.
+# `escape_metric` can be:
+#   - mutation_escape: default, mutation-level escape
+#   - site_escape: total escape at site
+#   - max_at_site_escape: max escape of any mutation at site
+#   - mean_at_site_escape: mean escape of all mutations with measurements at site
+
+vir_whelan_VSV_S2K146: &vir_whelan_VSV_2K146
+  spike_sequence: ./data/spike_whelan_S_gene.gb
+  min_size: 0.5  # smallest point size (e.g., unobserved mutations)
+  max_size: 5  # point size proportional to n observations with this max
+  size_scale: 0.25  # scale all point sizes by this much
+  shapes: ['o', 'x', 'D']
+  colors: ['gray', 'tan', 'red']
+  alphas: [0.4, 0.4, 0.75]
+  label_fontsize: 7  # size of text labels for mutations
+  ncol: 1  # number of columns in faceted plot
+  antibodies:
+    S2K146_63:  # total of 1 mutants selected
+      display_name: S2K146
+      replicates_total: 36
+      replicates_escape: 36
+      mutations:
+        Y489H: 36
+      label_mutations:
+        - Y489H
+
+
+vir_whelan_VSV_main: &vir_whelan_VSV_main
+  spike_sequence: ./data/spike_whelan_S_gene.gb
+  min_size: 0.5  # smallest point size (e.g., unobserved mutations)
+  max_size: 10  # point size proportional to n observations with this max
+  size_scale: 0.25  # scale all point sizes by this much
+  shapes: ['o', 'x', 'D', 'D']
+  colors: ['gray', 'tan', 'red', 'blue']
+  alphas: [0.4, 0.4, 0.75, 0.75]
+  label_fontsize: 7  # size of text labels for mutations
+  ncol: 4  # number of columns in faceted plot
+  antibodies:
+    S2K146_63:  # total of 1 mutants selected
+      display_name: S2K146
+      replicates_total: 36
+      replicates_escape: 36
+      mutations:
+        Y489H: 36
+      label_mutations:
+        - Y489H
+    S2E12_56:  # total of 4 mutants selected
+      display_name: S2E12
+      replicates_total: 16
+      replicates_escape: 16
+      mutations:
+        G476S: 1
+        A475D: 1
+        G476D: 8
+        G485D: 6
+      label_mutations:
+        - G476S
+        - A475D
+        - G476D
+        - G485D
+    S2D106_68:  # total of 4 mutants selected
+      display_name: S2D106
+      replicates_total: 15
+      replicates_escape: 15
+      mutations:
+        E484A: 1
+        F490C: 2
+        E484K: 11
+        E484V: 1
+      label_mutations:
+        - E484A
+        - F490C
+        - E484K
+        - E484V
+    S2X58_18:  # total of 13 mutants selected
+      display_name: S2X58
+      replicates_total: 23
+      replicates_escape: 23
+      mutations:
+        R346G: 2
+        E484G: 1
+        F490S: 2
+        Y449C: 1
+        N448D: 1
+        N450D: 1
+        N450K: 2
+        L452R: 2
+        F490V: 1
+        R346I: 1
+        F490L: 6
+        N450H: 3
+      label_mutations:
+        - R346G
+        - E484G
+        - F490S
+        - Y449C
+        - N448D
+        - N450D
+        - N450K
+        - L452R
+        - F490V
+        - R346I
+        - F490L
+        - N450H

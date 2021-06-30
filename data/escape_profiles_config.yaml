@@ -1,0 +1,93 @@
+# Specify configuration of escape profile and related plots.
+#
+# Each entry should be a key with the name of the plot. It then can
+# have the following nested keys:
+#   conditions -> specify antibodies / sera and names to use when plotting
+#   plot_auto_identified_sites -> provide name of one of the thresholds for
+#                                 identifying sites of strong escape, or false
+#                                 to not plot auto-identified strong sites.
+#   add_sites -> list of any additional sites to plot
+#   exclude_sites -> list of any sites to exclude from plot
+#   site_color_scheme -> site-level color scheme in `site_color_schemes.csv`
+#                        **or** color for all sites
+#   mutation_colors -> dict keyed by mutation (e.g., P484) with value being color
+#   color_by_dms -> make copies of escape profiles colored by DMS bind / expr
+#   make_supp_data -> make supplemental data / dms-view file
+#   single_nt_only -> only include single-nt mutations relative to Genbank file
+#                     specified here in escape profiles.
+#   draw_line_plot -> set to false to not show line plot in escape profile
+#   analyze_natural_mutations -> analyze naturally occuring mutations at sites
+#                                of strong escape.
+#   analyze_natural_mutations_specs -> override defaults in analyzing natural
+#                                      mutations, defaults in `natural_mutations.ipynb`
+#                                      at top of cells making scatter plots.
+#   natural_mutations_mincounts -> plot escape grid for all sites of strong
+#                                  escape with >= this many mutation counts.
+#   escape_profile_ymax -> override default for this parameter specified
+#                          in main `config.yaml`.
+#   shade_sites -> shade the stacks for certain sites. Key by the antibody name
+#                  (using the short names defined as values in `conditions`),
+#                  and then the values are maps of site to the list [color, alpha]
+#   dmslogo_facet_plot_kwargs -> any keyword arguments to dmslogo.facet_plot
+#   dmslogo_draw_logo_kwargs -> any keyword arguments to dmslogo.draw_logo
+#   dmslogo_draw_line_kwargs -> any keyword arguments to dmslogo.draw_line
+
+Vir_S2K146:
+  conditions:
+    S2K146_63: S2K146
+  plot_auto_identified_sites: sensitive_max_mut
+  add_sites: []
+  exclude_sites: []
+  site_color_scheme: subdomain
+  color_by_dms: True
+  make_supp_data: True
+  analyze_natural_mutations: True
+
+Vir_S2K146_S2E12:
+  conditions:
+    S2K146_63: S2K146
+    S2E12_56: S2E12
+  plot_auto_identified_sites: sensitive_max_mut
+  add_sites: []
+  exclude_sites: []
+  site_color_scheme: subdomain
+  color_by_dms: True
+  make_supp_data: False
+  analyze_natural_mutations: False
+
+Vir_all:
+  conditions:
+    S309_421: S309
+    S2H97_58: S2H97
+    S304_46: S304
+    S2X35_70: S2X35
+    S2X259_59: S2X259
+    S2K146_63: S2K146
+    S2E12_56: S2E12
+    S2X16_54: S2X16
+    S2H58_46: S2H58
+    S2H13_56: S2H13
+    S2D106_68: S2D106
+    S2X58_18: S2X58
+    S2H14_105: S2H14
+    S2X227_138: S2X227
+  plot_auto_identified_sites: sensitive
+  add_sites: []
+  exclude_sites: []
+  site_color_scheme: subdomain
+  color_by_dms: false
+  make_supp_data: true
+  analyze_natural_mutations: False
+
+Vir_S2K146_single_nt:
+  conditions:
+    S2K146_63: S2K146
+  plot_auto_identified_sites: sensitive_max_mut
+  add_sites: []
+  exclude_sites: []
+  site_color_scheme: subdomain
+  color_by_dms: True
+  make_supp_data: False
+  analyze_natural_mutations: False
+  single_nt_only: ./data/spike_whelan_S_gene.gb
+

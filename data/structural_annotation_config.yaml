@@ -1,0 +1,160 @@
+# Information about outputting B-factor re-assigned PDBs and dms-view inputs
+#
+# Top-level keys are antibodies/ligands for which we want to annotate structural contacts
+# Under each antibody key, specify:
+#  pdbfile -> path to file containing PDB
+#  chains_RBD -> chain(s) of RBDs in structure
+#  chains_ligand -> chain(s) of ligands (Ab, ACE2)
+#  distance_cutoff -> for annotating structural contacts, distance cutoff
+#                     (typically 4 Angstrom for high-res with resolved side chains, 8
+#                     Angstrom for low res cryo-EM with only backbone atoms)
+
+# 6m0j is ACE2 bound RBD
+ACE2:
+  name: ACE2
+  pdbfile: data/pdbs/6M0J.pdb
+  chains_RBD:
+    - E
+  chains_ligand:
+    - A
+  distance_cutoff:
+    - 4
+
+# 6w41 is CR3022 bound to RBD
+CR3022:
+  name: CR3022
+  pdbfile: data/pdbs/6W41.pdb
+  chains_RBD:
+    - C
+  chains_ligand:
+    - H
+    - L
+  distance_cutoff:
+    - 4
+
+# 6xdg is REGN10933+REGN10987 bound to RBD
+REGN10933:
+  name: REGN10933
+  pdbfile: data/pdbs/6xdg.pdb
+  chains_RBD:
+    - E
+  chains_ligand:
+    - B
+    - D
+  distance_cutoff:
+    - 4
+
+# 6xdg is REGN10933+REGN10987 bound to RBD
+REGN10987:
+  name: REGN10987
+  pdbfile: data/pdbs/6xdg.pdb
+  chains_RBD:
+    - E
+  chains_ligand:
+    - A
+    - C
+  distance_cutoff:
+    - 4
+
+# 7C01 is CB6 bound to RBD
+7c01:
+  name: CB6
+  pdbfile: data/pdbs/7c01_single.pdb
+  chains_RBD:
+    - A
+  chains_ligand:
+    - H
+    - L
+  distance_cutoff:
+    - 4
+
+
+# 6wps is S309 bound to spike (3 down)
+6wps:
+  name: S309
+  pdbfile: data/pdbs/6wps.pdb
+  chains_RBD:
+    - A
+    - B
+    - E
+  chains_ligand:
+    - C
+    - D
+    - F
+    - G
+    - H
+    - L
+  distance_cutoff:
+    - 4
+
+#7K45: #S2E12 bound to RBD
+#  name: S2E12
+#  pdbfile: data/pdbs/7k45.pdb
+#  chains_RBD:
+#    - B
+#  chains_ligand:
+#    - H
+#    - L
+#  distance_cutoff:
+#    - 4
+
+7JW0: #S304 bound to Spike
+  name: S304
+  pdbfile: data/pdbs/7jw0.pdb
+  chains_RBD:
+    - A
+    - B
+    - E
+  chains_ligand:
+    - H
+    - L
+    - C
+    - D
+    - F
+    - G
+  distance_cutoff:
+    - 4
+    
+#S2D106: #S2D106 cryoem local refinement bound to RBD    
+#  name: S2D106
+#  pdbfile: data/pdbs/20210203b_S2D106_RBD__local_rlx_0001_YP.pdb
+#  chains_RBD:
+#    - E
+#  chains_ligand:
+#    - H
+#    - L
+#  distance_cutoff:
+#    - 5
+#
+#S2E12: #S2E12 xtal structure bound to RBD
+#  name: S2E12
+#  pdbfile: data/pdbs/RBD_S2E12_S309_S304_notFinal.pdb
+#  chains_RBD:
+#    - R
+#  chains_ligand:
+#    - C
+#    - D
+#  distance_cutoff:
+#    - 5
+#    
+#S2X35: #S2X35 xtal structure bound to RBD
+#  name: S2X35
+#  pdbfile: data/pdbs/RBD_S2X35_S309.pdb
+#  chains_RBD:
+#    - R
+#  chains_ligand:
+#    - H
+#    - L
+#  distance_cutoff:
+#    - 5
+#
+#S2H97: #S2H97 xtal structure bound to RBD
+#  name: S2H97
+#  pdbfile: data/pdbs/fitmodel_5_refmac1.pdb
+#  chains_RBD:
+#    - S
+#  chains_ligand:
+#    - C
+#    - D
+#  distance_cutoff:
+#    - 5
