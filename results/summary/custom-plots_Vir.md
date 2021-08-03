@@ -194,6 +194,31 @@ to enable log10 plotting)
     #reset "true" pseudofreq for anything downstream
     dt[,pseudo_frequency:=pseudo_count/nrow(alignment$ali)]
 
+    #make pseudo-count, which is count +1 for all (so 0 can be visualized on log-scales)
+    dt[,pseudo_count := count+1]
+
+    #add a 'pseudo-frequency' for visualizaiton of count=0 on log plot (add railroad tracks manually and indicate this is 0). I rewrite this "pseudo-freq" later on to be true count+1 pseudofreq, but this is not as nice for this plot for having separation from the zero for railroad tracks
+    dt[,pseudo_frequency:=frequency]
+    dt[frequency==0,pseudo_frequency:=0.1*min(dt[frequency>0,frequency])]
+
+    p1 <- ggplot(dt[antibody %in% c("S2K146")])+aes(x=pseudo_frequency,y=mut_escape_frac)+
+      geom_point(shape=16, alpha=0.5, size=2.25)+
+      facet_wrap(~antibody,nrow=1)+
+      scale_x_continuous(trans="log10")+
+      scale_y_continuous(limits=c(0,1.05))+
+      theme_classic()+
+      xlab('mutant frequency on GISAID (log10 scale)')+
+      ylab('mutant escape fraction')+
+      geom_text_repel(aes(label=ifelse((mut_escape_frac>0.10925 & frequency>1e-6),as.character(paste(wildtype,site,mutation,sep="")),'')),size=3,color="gray40")
+    p1
+
+<img src="custom-plots_Vir_files/figure-gfm/mutation_escape_v_freq_s2k146-1.png" style="display: block; margin: auto;" />
+
+    invisible(dev.print(pdf, paste(output_dir,"/circ-mut-scatterplot_s2k146.pdf",sep="")))
+
+    #reset "true" pseudofreq for anything downstream
+    dt[,pseudo_frequency:=pseudo_count/nrow(alignment$ali)]
+
 Part 2: output tables for other annotations
 -------------------------------------------
 
