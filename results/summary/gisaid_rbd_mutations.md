@@ -54,8 +54,8 @@ with lzma.open(config['gisaid_spikes'], 'rt') as f:
 print(f"Read {len(spikes)} spike sequences.")
 ```
 
-    Reading GISAID spikes in data/spikeprot0502.tar.tar.xz
-    Read 1295663 spike sequences.
+    Reading GISAID spikes in data/spikeprot0927.tar.tar.xz
+    Read 3829746 spike sequences.
 
 
 Make a data frame that has the BioPython SeqRecord, length, host, and geographic location (country) for each spike.
@@ -104,42 +104,78 @@ spikes_df = spikes_df.query('host == "Human"')
   <tbody>
     <tr>
       <th>Human</th>
-      <td>1294001</td>
-    </tr>
-    <tr>
-      <th>Neovison vison</th>
-      <td>921</td>
+      <td>3826999</td>
     </tr>
     <tr>
       <th>Environment</th>
-      <td>619</td>
+      <td>1493</td>
+    </tr>
+    <tr>
+      <th>Neovison vison</th>
+      <td>957</td>
     </tr>
     <tr>
       <th>Felis catus</th>
-      <td>29</td>
+      <td>78</td>
+    </tr>
+    <tr>
+      <th>Canis lupus familiaris</th>
+      <td>41</td>
     </tr>
     <tr>
       <th>Panthera leo</th>
-      <td>24</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <th>Mustela lutreola</th>
+      <td>23</td>
     </tr>
     <tr>
       <th>Manis javanica</th>
       <td>19</td>
     </tr>
     <tr>
-      <th>Canis lupus familiaris</th>
-      <td>18</td>
+      <th>Neovision vision</th>
+      <td>14</td>
     </tr>
     <tr>
       <th>Panthera tigris jacksoni</th>
-      <td>7</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>Environmental</th>
+      <td>10</td>
     </tr>
     <tr>
       <th>Rhinolophus malayanus</th>
-      <td>4</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>P1 culture</th>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>Aonyx cinereus</th>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>unknown</th>
+      <td>5</td>
     </tr>
     <tr>
       <th>Gorilla gorilla gorilla</th>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>Panthera uncia</th>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>Panthera tigris</th>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>P2 culture</th>
       <td>3</td>
     </tr>
     <tr>
@@ -147,11 +183,19 @@ spikes_df = spikes_df.query('host == "Human"')
       <td>3</td>
     </tr>
     <tr>
-      <th>Rhinolophus shameli</th>
+      <th>Rhinolophus stheno</th>
       <td>2</td>
     </tr>
     <tr>
-      <th>Rhinolophus stheno</th>
+      <th>Dog</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>Mustela putorius furo</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>Rhinolophus shameli</th>
       <td>2</td>
     </tr>
     <tr>
@@ -159,19 +203,11 @@ spikes_df = spikes_df.query('host == "Human"')
       <td>2</td>
     </tr>
     <tr>
-      <th>Chlorocebus sabaeus</th>
-      <td>1</td>
+      <th>Rhinolophus pusillus</th>
+      <td>2</td>
     </tr>
     <tr>
-      <th>Mus musculus (BALB/c mice)</th>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>Prionailurus bengalensis euptilurus</th>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>Rhinolophus affinis</th>
+      <th>Host</th>
       <td>1</td>
     </tr>
     <tr>
@@ -179,7 +215,23 @@ spikes_df = spikes_df.query('host == "Human"')
       <td>1</td>
     </tr>
     <tr>
-      <th>Rhinolophus pusillus</th>
+      <th>Rhinolophus sinicus</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Rhinolophus marshalli</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Chlorocebus sabaeus</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Puma concolor</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Rhinolophus affinis</th>
       <td>1</td>
     </tr>
     <tr>
@@ -187,11 +239,23 @@ spikes_df = spikes_df.query('host == "Human"')
       <td>1</td>
     </tr>
     <tr>
-      <th>Rhinolophus sinicus</th>
+      <th>Prionailurus bengalensis euptilurus</th>
       <td>1</td>
     </tr>
     <tr>
-      <th>Mustela putorius furo</th>
+      <th>Mus musculus (BALB/c mice)</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Control</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>P3 culture</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Panthera tigris sondaica</th>
       <td>1</td>
     </tr>
   </tbody>
@@ -252,9 +316,7 @@ spikes_df = spikes_df.query('valid_length')
 
 
 
-    
 ![png](gisaid_rbd_mutations_files/gisaid_rbd_mutations_14_1.png)
-    
 
 
     
@@ -277,11 +339,11 @@ spikes_df = spikes_df.query('valid_length')
   <tbody>
     <tr>
       <th>False</th>
-      <td>26386</td>
+      <td>72667</td>
     </tr>
     <tr>
       <th>True</th>
-      <td>1267615</td>
+      <td>3754332</td>
     </tr>
   </tbody>
 </table>
@@ -292,9 +354,7 @@ spikes_df = spikes_df.query('valid_length')
 
 
 
-    
 ![png](gisaid_rbd_mutations_files/gisaid_rbd_mutations_14_5.png)
-    
 
 
 Finally, we get rid of spikes with **lots** of ambiguous residues as they may hinder the alignment below.
@@ -334,11 +394,11 @@ display(HTML(
   <tbody>
     <tr>
       <th>False</th>
-      <td>1204037</td>
+      <td>3480173</td>
     </tr>
     <tr>
       <th>True</th>
-      <td>63578</td>
+      <td>274159</td>
     </tr>
   </tbody>
 </table>
@@ -522,6 +582,206 @@ assert len(aligned_rbds) == len(spikes_df)
     Now aligning these sequences...
     Alignment complete.
     
+    Writing spikes 1300001 to 1350000 to results/GISAID_mutations/human_full-length_spikes_1300001-to-1350000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 1350001 to 1400000 to results/GISAID_mutations/human_full-length_spikes_1350001-to-1400000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 1400001 to 1450000 to results/GISAID_mutations/human_full-length_spikes_1400001-to-1450000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 1450001 to 1500000 to results/GISAID_mutations/human_full-length_spikes_1450001-to-1500000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 1500001 to 1550000 to results/GISAID_mutations/human_full-length_spikes_1500001-to-1550000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 1550001 to 1600000 to results/GISAID_mutations/human_full-length_spikes_1550001-to-1600000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 1600001 to 1650000 to results/GISAID_mutations/human_full-length_spikes_1600001-to-1650000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 1650001 to 1700000 to results/GISAID_mutations/human_full-length_spikes_1650001-to-1700000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 1700001 to 1750000 to results/GISAID_mutations/human_full-length_spikes_1700001-to-1750000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 1750001 to 1800000 to results/GISAID_mutations/human_full-length_spikes_1750001-to-1800000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 1800001 to 1850000 to results/GISAID_mutations/human_full-length_spikes_1800001-to-1850000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 1850001 to 1900000 to results/GISAID_mutations/human_full-length_spikes_1850001-to-1900000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 1900001 to 1950000 to results/GISAID_mutations/human_full-length_spikes_1900001-to-1950000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 1950001 to 2000000 to results/GISAID_mutations/human_full-length_spikes_1950001-to-2000000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 2000001 to 2050000 to results/GISAID_mutations/human_full-length_spikes_2000001-to-2050000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 2050001 to 2100000 to results/GISAID_mutations/human_full-length_spikes_2050001-to-2100000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 2100001 to 2150000 to results/GISAID_mutations/human_full-length_spikes_2100001-to-2150000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 2150001 to 2200000 to results/GISAID_mutations/human_full-length_spikes_2150001-to-2200000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 2200001 to 2250000 to results/GISAID_mutations/human_full-length_spikes_2200001-to-2250000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 2250001 to 2300000 to results/GISAID_mutations/human_full-length_spikes_2250001-to-2300000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 2300001 to 2350000 to results/GISAID_mutations/human_full-length_spikes_2300001-to-2350000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 2350001 to 2400000 to results/GISAID_mutations/human_full-length_spikes_2350001-to-2400000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 2400001 to 2450000 to results/GISAID_mutations/human_full-length_spikes_2400001-to-2450000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 2450001 to 2500000 to results/GISAID_mutations/human_full-length_spikes_2450001-to-2500000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 2500001 to 2550000 to results/GISAID_mutations/human_full-length_spikes_2500001-to-2550000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 2550001 to 2600000 to results/GISAID_mutations/human_full-length_spikes_2550001-to-2600000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 2600001 to 2650000 to results/GISAID_mutations/human_full-length_spikes_2600001-to-2650000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 2650001 to 2700000 to results/GISAID_mutations/human_full-length_spikes_2650001-to-2700000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 2700001 to 2750000 to results/GISAID_mutations/human_full-length_spikes_2700001-to-2750000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 2750001 to 2800000 to results/GISAID_mutations/human_full-length_spikes_2750001-to-2800000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 2800001 to 2850000 to results/GISAID_mutations/human_full-length_spikes_2800001-to-2850000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 2850001 to 2900000 to results/GISAID_mutations/human_full-length_spikes_2850001-to-2900000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 2900001 to 2950000 to results/GISAID_mutations/human_full-length_spikes_2900001-to-2950000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 2950001 to 3000000 to results/GISAID_mutations/human_full-length_spikes_2950001-to-3000000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 3000001 to 3050000 to results/GISAID_mutations/human_full-length_spikes_3000001-to-3050000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 3050001 to 3100000 to results/GISAID_mutations/human_full-length_spikes_3050001-to-3100000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 3100001 to 3150000 to results/GISAID_mutations/human_full-length_spikes_3100001-to-3150000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 3150001 to 3200000 to results/GISAID_mutations/human_full-length_spikes_3150001-to-3200000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 3200001 to 3250000 to results/GISAID_mutations/human_full-length_spikes_3200001-to-3250000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 3250001 to 3300000 to results/GISAID_mutations/human_full-length_spikes_3250001-to-3300000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 3300001 to 3350000 to results/GISAID_mutations/human_full-length_spikes_3300001-to-3350000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 3350001 to 3400000 to results/GISAID_mutations/human_full-length_spikes_3350001-to-3400000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 3400001 to 3450000 to results/GISAID_mutations/human_full-length_spikes_3400001-to-3450000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 3450001 to 3500000 to results/GISAID_mutations/human_full-length_spikes_3450001-to-3500000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 3500001 to 3550000 to results/GISAID_mutations/human_full-length_spikes_3500001-to-3550000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 3550001 to 3600000 to results/GISAID_mutations/human_full-length_spikes_3550001-to-3600000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 3600001 to 3650000 to results/GISAID_mutations/human_full-length_spikes_3600001-to-3650000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 3650001 to 3700000 to results/GISAID_mutations/human_full-length_spikes_3650001-to-3700000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 3700001 to 3750000 to results/GISAID_mutations/human_full-length_spikes_3700001-to-3750000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
+    Writing spikes 3750001 to 3800000 to results/GISAID_mutations/human_full-length_spikes_3750001-to-3800000.fasta
+    Now aligning these sequences...
+    Alignment complete.
+    
 
 
 ## Parse / filter aligned RBDs
@@ -561,15 +821,11 @@ for prop in ['n_ambiguous', 'n_gaps']:
 ```
 
 
-    
 ![png](gisaid_rbd_mutations_files/gisaid_rbd_mutations_26_0.png)
-    
 
 
 
-    
 ![png](gisaid_rbd_mutations_files/gisaid_rbd_mutations_26_1.png)
-    
 
 
 Based on above plots, we will retain just RBDs with no ambiguous amino acids and no gaps:
@@ -581,7 +837,7 @@ assert rbd_df['all_valid_aas'].all()
 print(f"Retained {len(rbd_df)} RBDs.")
 ```
 
-    Retained 1190347 RBDs.
+    Retained 3489493 RBDs.
 
 
 Now get and plot the number of amino-acid mutations per RBD relative to the reference sequence, plotting on both a linear and log scale.
@@ -590,7 +846,7 @@ We then filter all RBDs that have more than some maximum number of mutations, ba
 
 
 ```python
-max_muts = 8
+max_muts = 15
 
 refseq_str = str(refseq.seq)
 rbd_df = (
@@ -612,15 +868,11 @@ rbd_df = rbd_df.query('n_mutations <= @max_muts')
 ```
 
 
-    
 ![png](gisaid_rbd_mutations_files/gisaid_rbd_mutations_30_0.png)
-    
 
 
 
-    
 ![png](gisaid_rbd_mutations_files/gisaid_rbd_mutations_30_1.png)
-    
 
 
 Write RBD sequences that pass filtering to a file:
@@ -634,7 +886,7 @@ print(f"Writing alignment to {rbd_alignment_file}")
 _ = Bio.SeqIO.write(rbd_df['seqrecord'].tolist(), rbd_alignment_file, 'fasta')
 ```
 
-    Overall, there are 1190241 aligned RBDs that passed filters.
+    Overall, there are 3489189 aligned RBDs that passed filters.
     Writing alignment to results/GISAID_mutations/RBD_alignment.fasta
 
 
@@ -681,139 +933,139 @@ display(HTML(muts_df.head(n=15).to_html(index=False)))
   </thead>
   <tbody>
     <tr>
-      <td>171</td>
-      <td>501</td>
-      <td>N</td>
-      <td>Y</td>
-      <td>462642</td>
-      <td>434</td>
-      <td>0.388696</td>
-    </tr>
-    <tr>
-      <td>147</td>
-      <td>477</td>
-      <td>S</td>
-      <td>N</td>
-      <td>43577</td>
-      <td>179</td>
-      <td>0.036612</td>
-    </tr>
-    <tr>
       <td>122</td>
       <td>452</td>
       <td>L</td>
       <td>R</td>
-      <td>41051</td>
-      <td>120</td>
-      <td>0.034490</td>
-    </tr>
-    <tr>
-      <td>154</td>
-      <td>484</td>
-      <td>E</td>
-      <td>K</td>
-      <td>37596</td>
-      <td>238</td>
-      <td>0.031587</td>
-    </tr>
-    <tr>
-      <td>109</td>
-      <td>439</td>
-      <td>N</td>
-      <td>K</td>
-      <td>18890</td>
-      <td>161</td>
-      <td>0.015871</td>
+      <td>1374482</td>
+      <td>551</td>
+      <td>0.393926</td>
     </tr>
     <tr>
       <td>148</td>
       <td>478</td>
       <td>T</td>
       <td>K</td>
-      <td>12473</td>
-      <td>61</td>
-      <td>0.010479</td>
+      <td>1308631</td>
+      <td>483</td>
+      <td>0.375053</td>
     </tr>
     <tr>
-      <td>87</td>
-      <td>417</td>
-      <td>K</td>
+      <td>171</td>
+      <td>501</td>
       <td>N</td>
-      <td>10458</td>
-      <td>127</td>
-      <td>0.008786</td>
+      <td>Y</td>
+      <td>1189976</td>
+      <td>808</td>
+      <td>0.341047</td>
+    </tr>
+    <tr>
+      <td>154</td>
+      <td>484</td>
+      <td>E</td>
+      <td>K</td>
+      <td>185505</td>
+      <td>510</td>
+      <td>0.053166</td>
     </tr>
     <tr>
       <td>87</td>
       <td>417</td>
       <td>K</td>
       <td>T</td>
-      <td>6355</td>
-      <td>77</td>
-      <td>0.005339</td>
+      <td>82534</td>
+      <td>243</td>
+      <td>0.023654</td>
+    </tr>
+    <tr>
+      <td>147</td>
+      <td>477</td>
+      <td>S</td>
+      <td>N</td>
+      <td>64467</td>
+      <td>255</td>
+      <td>0.018476</td>
+    </tr>
+    <tr>
+      <td>87</td>
+      <td>417</td>
+      <td>K</td>
+      <td>N</td>
+      <td>30325</td>
+      <td>222</td>
+      <td>0.008691</td>
+    </tr>
+    <tr>
+      <td>109</td>
+      <td>439</td>
+      <td>N</td>
+      <td>K</td>
+      <td>25257</td>
+      <td>205</td>
+      <td>0.007239</td>
     </tr>
     <tr>
       <td>164</td>
       <td>494</td>
       <td>S</td>
       <td>P</td>
-      <td>5656</td>
-      <td>69</td>
-      <td>0.004752</td>
-    </tr>
-    <tr>
-      <td>190</td>
-      <td>520</td>
-      <td>A</td>
-      <td>S</td>
-      <td>3110</td>
-      <td>65</td>
-      <td>0.002613</td>
-    </tr>
-    <tr>
-      <td>171</td>
-      <td>501</td>
-      <td>N</td>
-      <td>T</td>
-      <td>2810</td>
-      <td>68</td>
-      <td>0.002361</td>
-    </tr>
-    <tr>
-      <td>192</td>
-      <td>522</td>
-      <td>A</td>
-      <td>S</td>
-      <td>2028</td>
-      <td>73</td>
-      <td>0.001704</td>
-    </tr>
-    <tr>
-      <td>110</td>
-      <td>440</td>
-      <td>N</td>
-      <td>K</td>
-      <td>1539</td>
-      <td>58</td>
-      <td>0.001293</td>
+      <td>11710</td>
+      <td>135</td>
+      <td>0.003356</td>
     </tr>
     <tr>
       <td>160</td>
       <td>490</td>
       <td>F</td>
       <td>S</td>
-      <td>1412</td>
-      <td>71</td>
-      <td>0.001186</td>
+      <td>11451</td>
+      <td>206</td>
+      <td>0.003282</td>
     </tr>
     <tr>
-      <td>37</td>
-      <td>367</td>
-      <td>V</td>
-      <td>F</td>
-      <td>1327</td>
-      <td>69</td>
-      <td>0.001115</td>
+      <td>154</td>
+      <td>484</td>
+      <td>E</td>
+      <td>Q</td>
+      <td>9029</td>
+      <td>117</td>
+      <td>0.002588</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>346</td>
+      <td>R</td>
+      <td>K</td>
+      <td>8733</td>
+      <td>129</td>
+      <td>0.002503</td>
+    </tr>
+    <tr>
+      <td>110</td>
+      <td>440</td>
+      <td>N</td>
+      <td>K</td>
+      <td>7842</td>
+      <td>97</td>
+      <td>0.002248</td>
+    </tr>
+    <tr>
+      <td>122</td>
+      <td>452</td>
+      <td>L</td>
+      <td>Q</td>
+      <td>7516</td>
+      <td>121</td>
+      <td>0.002154</td>
+    </tr>
+    <tr>
+      <td>190</td>
+      <td>520</td>
+      <td>A</td>
+      <td>S</td>
+      <td>5838</td>
+      <td>105</td>
+      <td>0.001673</td>
     </tr>
   </tbody>
 </table>
@@ -835,9 +1087,7 @@ _ = p.draw()
 ```
 
 
-    
 ![png](gisaid_rbd_mutations_files/gisaid_rbd_mutations_36_0.png)
-    
 
 
 Write the mutation counts to a file:

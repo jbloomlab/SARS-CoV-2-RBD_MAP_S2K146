@@ -282,184 +282,184 @@ display(HTML(sitecounts_strong_sites.head(n=20).to_html(index=False)))
   </thead>
   <tbody>
     <tr>
-      <td>S2H14_105</td>
+      <td>S2X58_18</td>
+      <td>sensitive_max_mut</td>
+      <td>452</td>
+      <td>L</td>
+      <td>5.3240</td>
+      <td>1383339</td>
+      <td>L452R (1374482), L452Q (7516), L452M (1287), L452W (44), L452V (6), L452P (2), L452H (1), L452F (1)</td>
+    </tr>
+    <tr>
+      <td>COV2-2096_400</td>
+      <td>sensitive</td>
+      <td>452</td>
+      <td>L</td>
+      <td>2.2170</td>
+      <td>1383339</td>
+      <td>L452R (1374482), L452Q (7516), L452M (1287), L452W (44), L452V (6), L452P (2), L452F (1), L452H (1)</td>
+    </tr>
+    <tr>
+      <td>LY-CoV555_400</td>
+      <td>sensitive</td>
+      <td>452</td>
+      <td>L</td>
+      <td>4.0150</td>
+      <td>1383339</td>
+      <td>L452R (1374482), L452Q (7516), L452M (1287), L452W (44), L452V (6), L452P (2), L452F (1), L452H (1)</td>
+    </tr>
+    <tr>
+      <td>LY-CoV555_400</td>
+      <td>sensitive_max_mut</td>
+      <td>452</td>
+      <td>L</td>
+      <td>4.0150</td>
+      <td>1383339</td>
+      <td>L452R (1374482), L452Q (7516), L452M (1287), L452W (44), L452V (6), L452P (2), L452F (1), L452H (1)</td>
+    </tr>
+    <tr>
+      <td>S2X58_18</td>
+      <td>sensitive</td>
+      <td>452</td>
+      <td>L</td>
+      <td>5.3240</td>
+      <td>1383339</td>
+      <td>L452R (1374482), L452Q (7516), L452M (1287), L452W (44), L452V (6), L452P (2), L452F (1), L452H (1)</td>
+    </tr>
+    <tr>
+      <td>COV2-2096_400</td>
       <td>default</td>
-      <td>501</td>
-      <td>N</td>
-      <td>14.6600</td>
-      <td>465506</td>
-      <td>N501Y (462642), N501T (2810), N501S (30), N501I (18), N501H (4), N501C (1), N501F (1)</td>
+      <td>452</td>
+      <td>L</td>
+      <td>2.2170</td>
+      <td>1383339</td>
+      <td>L452R (1374482), L452Q (7516), L452M (1287), L452W (44), L452V (6), L452P (2), L452H (1), L452F (1)</td>
     </tr>
     <tr>
-      <td>CB6_400</td>
-      <td>sensitive</td>
-      <td>501</td>
-      <td>N</td>
-      <td>1.4430</td>
-      <td>465506</td>
-      <td>N501Y (462642), N501T (2810), N501S (30), N501I (18), N501H (4), N501F (1), N501C (1)</td>
+      <td>S2X58_18</td>
+      <td>default</td>
+      <td>452</td>
+      <td>L</td>
+      <td>5.3240</td>
+      <td>1383339</td>
+      <td>L452R (1374482), L452Q (7516), L452M (1287), L452W (44), L452V (6), L452P (2), L452F (1), L452H (1)</td>
     </tr>
     <tr>
-      <td>COV2-2499_400</td>
+      <td>COV2-2096_400</td>
       <td>sensitive_max_mut</td>
-      <td>501</td>
-      <td>N</td>
-      <td>0.5019</td>
-      <td>465506</td>
-      <td>N501Y (462642), N501T (2810), N501S (30), N501I (18), N501H (4), N501C (1), N501F (1)</td>
+      <td>452</td>
+      <td>L</td>
+      <td>2.2170</td>
+      <td>1383339</td>
+      <td>L452R (1374482), L452Q (7516), L452M (1287), L452W (44), L452V (6), L452P (2), L452F (1), L452H (1)</td>
     </tr>
     <tr>
-      <td>S2H14_105</td>
-      <td>sensitive_max_mut</td>
-      <td>501</td>
-      <td>N</td>
-      <td>14.6600</td>
-      <td>465506</td>
-      <td>N501Y (462642), N501T (2810), N501S (30), N501I (18), N501H (4), N501C (1), N501F (1)</td>
-    </tr>
-    <tr>
-      <td>CB6_400</td>
-      <td>sensitive_max_mut</td>
-      <td>501</td>
-      <td>N</td>
-      <td>1.4430</td>
-      <td>465506</td>
-      <td>N501Y (462642), N501T (2810), N501S (30), N501I (18), N501H (4), N501C (1), N501F (1)</td>
-    </tr>
-    <tr>
-      <td>S2H14_105</td>
-      <td>sensitive</td>
-      <td>501</td>
-      <td>N</td>
-      <td>14.6600</td>
-      <td>465506</td>
-      <td>N501Y (462642), N501T (2810), N501S (30), N501I (18), N501H (4), N501C (1), N501F (1)</td>
-    </tr>
-    <tr>
-      <td>COV2-2499_400</td>
-      <td>sensitive</td>
-      <td>501</td>
-      <td>N</td>
-      <td>0.5019</td>
-      <td>465506</td>
-      <td>N501Y (462642), N501T (2810), N501S (30), N501I (18), N501H (4), N501F (1), N501C (1)</td>
+      <td>LY-CoV555_400</td>
+      <td>default</td>
+      <td>452</td>
+      <td>L</td>
+      <td>4.0150</td>
+      <td>1383339</td>
+      <td>L452R (1374482), L452Q (7516), L452M (1287), L452W (44), L452V (6), L452P (2), L452F (1), L452H (1)</td>
     </tr>
     <tr>
       <td>S2E12_56</td>
       <td>sensitive_max_mut</td>
-      <td>477</td>
-      <td>S</td>
-      <td>1.4840</td>
-      <td>45028</td>
-      <td>S477N (43577), S477R (905), S477I (442), S477G (89), S477T (13), S477V (1), S477A (1)</td>
+      <td>478</td>
+      <td>T</td>
+      <td>1.5710</td>
+      <td>1310032</td>
+      <td>T478K (1308631), T478I (850), T478R (538), T478A (11), T478S (2)</td>
     </tr>
     <tr>
-      <td>S2X58_18</td>
+      <td>COV2-2499_400</td>
       <td>sensitive_max_mut</td>
-      <td>452</td>
-      <td>L</td>
-      <td>5.3240</td>
-      <td>42047</td>
-      <td>L452R (41051), L452Q (735), L452M (255), L452V (3), L452P (2), L452F (1)</td>
+      <td>501</td>
+      <td>N</td>
+      <td>0.5019</td>
+      <td>1194469</td>
+      <td>N501Y (1189976), N501T (4302), N501S (74), N501I (61), N501H (41), N501K (9), N501F (3), N501R (1), N501L (1), N501D (1)</td>
     </tr>
     <tr>
-      <td>S2X58_18</td>
+      <td>CB6_400</td>
       <td>sensitive</td>
-      <td>452</td>
-      <td>L</td>
-      <td>5.3240</td>
-      <td>42047</td>
-      <td>L452R (41051), L452Q (735), L452M (255), L452V (3), L452P (2), L452F (1)</td>
+      <td>501</td>
+      <td>N</td>
+      <td>1.4430</td>
+      <td>1194469</td>
+      <td>N501Y (1189976), N501T (4302), N501S (74), N501I (61), N501H (41), N501K (9), N501F (3), N501R (1), N501L (1), N501D (1)</td>
+    </tr>
+    <tr>
+      <td>CB6_400</td>
+      <td>sensitive_max_mut</td>
+      <td>501</td>
+      <td>N</td>
+      <td>1.4430</td>
+      <td>1194469</td>
+      <td>N501Y (1189976), N501T (4302), N501S (74), N501I (61), N501H (41), N501K (9), N501F (3), N501D (1), N501R (1), N501L (1)</td>
+    </tr>
+    <tr>
+      <td>S2H14_105</td>
+      <td>sensitive</td>
+      <td>501</td>
+      <td>N</td>
+      <td>14.6600</td>
+      <td>1194469</td>
+      <td>N501Y (1189976), N501T (4302), N501S (74), N501I (61), N501H (41), N501K (9), N501F (3), N501R (1), N501L (1), N501D (1)</td>
+    </tr>
+    <tr>
+      <td>S2H14_105</td>
+      <td>sensitive_max_mut</td>
+      <td>501</td>
+      <td>N</td>
+      <td>14.6600</td>
+      <td>1194469</td>
+      <td>N501Y (1189976), N501T (4302), N501S (74), N501I (61), N501H (41), N501K (9), N501F (3), N501D (1), N501L (1), N501R (1)</td>
+    </tr>
+    <tr>
+      <td>S2H14_105</td>
+      <td>default</td>
+      <td>501</td>
+      <td>N</td>
+      <td>14.6600</td>
+      <td>1194469</td>
+      <td>N501Y (1189976), N501T (4302), N501S (74), N501I (61), N501H (41), N501K (9), N501F (3), N501R (1), N501L (1), N501D (1)</td>
+    </tr>
+    <tr>
+      <td>COV2-2499_400</td>
+      <td>sensitive</td>
+      <td>501</td>
+      <td>N</td>
+      <td>0.5019</td>
+      <td>1194469</td>
+      <td>N501Y (1189976), N501T (4302), N501S (74), N501I (61), N501H (41), N501K (9), N501F (3), N501R (1), N501L (1), N501D (1)</td>
     </tr>
     <tr>
       <td>LY-CoV555_400</td>
       <td>default</td>
-      <td>452</td>
-      <td>L</td>
-      <td>4.0150</td>
-      <td>42047</td>
-      <td>L452R (41051), L452Q (735), L452M (255), L452V (3), L452P (2), L452F (1)</td>
+      <td>484</td>
+      <td>E</td>
+      <td>16.8100</td>
+      <td>194998</td>
+      <td>E484K (185505), E484Q (9029), E484A (190), E484G (121), E484D (95), E484V (38), E484R (18), E484S (1), E484T (1)</td>
     </tr>
     <tr>
-      <td>COV2-2096_400</td>
-      <td>sensitive_max_mut</td>
-      <td>452</td>
-      <td>L</td>
-      <td>2.2170</td>
-      <td>42047</td>
-      <td>L452R (41051), L452Q (735), L452M (255), L452V (3), L452P (2), L452F (1)</td>
-    </tr>
-    <tr>
-      <td>LY-CoV555_400</td>
-      <td>sensitive_max_mut</td>
-      <td>452</td>
-      <td>L</td>
-      <td>4.0150</td>
-      <td>42047</td>
-      <td>L452R (41051), L452Q (735), L452M (255), L452V (3), L452P (2), L452F (1)</td>
+      <td>S2E12_56</td>
+      <td>sensitive</td>
+      <td>484</td>
+      <td>E</td>
+      <td>5.2020</td>
+      <td>194998</td>
+      <td>E484K (185505), E484Q (9029), E484A (190), E484G (121), E484D (95), E484V (38), E484R (18), E484T (1), E484S (1)</td>
     </tr>
     <tr>
       <td>LY-CoV555_400</td>
       <td>sensitive</td>
-      <td>452</td>
-      <td>L</td>
-      <td>4.0150</td>
-      <td>42047</td>
-      <td>L452R (41051), L452Q (735), L452M (255), L452V (3), L452P (2), L452F (1)</td>
-    </tr>
-    <tr>
-      <td>COV2-2096_400</td>
-      <td>sensitive</td>
-      <td>452</td>
-      <td>L</td>
-      <td>2.2170</td>
-      <td>42047</td>
-      <td>L452R (41051), L452Q (735), L452M (255), L452V (3), L452P (2), L452F (1)</td>
-    </tr>
-    <tr>
-      <td>COV2-2096_400</td>
-      <td>default</td>
-      <td>452</td>
-      <td>L</td>
-      <td>2.2170</td>
-      <td>42047</td>
-      <td>L452R (41051), L452Q (735), L452M (255), L452V (3), L452P (2), L452F (1)</td>
-    </tr>
-    <tr>
-      <td>S2X58_18</td>
-      <td>default</td>
-      <td>452</td>
-      <td>L</td>
-      <td>5.3240</td>
-      <td>42047</td>
-      <td>L452R (41051), L452Q (735), L452M (255), L452V (3), L452P (2), L452F (1)</td>
-    </tr>
-    <tr>
-      <td>COV2-2050_400</td>
-      <td>default</td>
       <td>484</td>
       <td>E</td>
-      <td>3.9620</td>
-      <td>38960</td>
-      <td>E484K (37596), E484Q (1261), E484G (42), E484A (35), E484D (21), E484R (4), E484V (1)</td>
-    </tr>
-    <tr>
-      <td>COV2-2832_400</td>
-      <td>sensitive_max_mut</td>
-      <td>484</td>
-      <td>E</td>
-      <td>0.4752</td>
-      <td>38960</td>
-      <td>E484K (37596), E484Q (1261), E484G (42), E484A (35), E484D (21), E484R (4), E484V (1)</td>
-    </tr>
-    <tr>
-      <td>COV2-2479_400</td>
-      <td>default</td>
-      <td>484</td>
-      <td>E</td>
-      <td>0.7676</td>
-      <td>38960</td>
-      <td>E484K (37596), E484Q (1261), E484G (42), E484A (35), E484D (21), E484R (4), E484V (1)</td>
+      <td>16.8100</td>
+      <td>194998</td>
+      <td>E484K (185505), E484Q (9029), E484A (190), E484G (121), E484D (95), E484V (38), E484R (18), E484S (1), E484T (1)</td>
     </tr>
   </tbody>
 </table>
@@ -569,48 +569,48 @@ for name, specs in escape_profiles_config.items():
       <td>sensitive_max_mut</td>
       <td>484</td>
       <td>E</td>
-      <td>38960</td>
-      <td>E484K (37596), E484Q (1261), E484G (42), E484A (35), E484D (21), E484R (4), E484V (1)</td>
+      <td>194998</td>
+      <td>E484K (185505), E484Q (9029), E484A (190), E484G (121), E484D (95), E484V (38), E484R (18), E484T (1), E484S (1)</td>
     </tr>
     <tr>
       <td>S2K146</td>
       <td>sensitive_max_mut</td>
       <td>475</td>
       <td>A</td>
-      <td>396</td>
-      <td>A475V (277), A475S (93), A475T (23), A475D (2), A475P (1)</td>
-    </tr>
-    <tr>
-      <td>S2K146</td>
-      <td>sensitive_max_mut</td>
-      <td>486</td>
-      <td>F</td>
-      <td>53</td>
-      <td>F486L (46), F486S (6), F486I (1)</td>
+      <td>1874</td>
+      <td>A475V (1562), A475S (268), A475T (41), A475P (3)</td>
     </tr>
     <tr>
       <td>S2K146</td>
       <td>sensitive_max_mut</td>
       <td>456</td>
       <td>F</td>
-      <td>21</td>
-      <td>F456L (17), F456Y (2), F456V (1), F456I (1)</td>
+      <td>128</td>
+      <td>F456L (121), F456V (3), F456Y (2), F456I (1), F456C (1)</td>
+    </tr>
+    <tr>
+      <td>S2K146</td>
+      <td>sensitive_max_mut</td>
+      <td>486</td>
+      <td>F</td>
+      <td>100</td>
+      <td>F486L (65), F486S (22), F486I (9), F486Y (3), F486V (1)</td>
     </tr>
     <tr>
       <td>S2K146</td>
       <td>sensitive_max_mut</td>
       <td>489</td>
       <td>Y</td>
-      <td>21</td>
-      <td>Y489H (16), Y489C (2), Y489F (1), Y489N (1), Y489S (1)</td>
+      <td>44</td>
+      <td>Y489H (35), Y489C (5), Y489S (2), Y489F (1), Y489N (1)</td>
     </tr>
     <tr>
       <td>S2K146</td>
       <td>sensitive_max_mut</td>
       <td>487</td>
       <td>N</td>
-      <td>9</td>
-      <td>N487D (2), N487K (2), N487T (2), N487S (1), N487H (1), N487I (1)</td>
+      <td>12</td>
+      <td>N487D (4), N487I (2), N487T (2), N487K (2), N487S (1), N487H (1)</td>
     </tr>
   </tbody>
 </table>
@@ -620,9 +620,7 @@ for name, specs in escape_profiles_config.items():
 
 
 
-    
 ![png](natural_mutations_files/natural_mutations_20_3.png)
-    
 
 
 ## Plot correlation between escape and natural frequency
@@ -679,7 +677,7 @@ display(HTML(escape_and_freq.head().to_html()))
       <td>0.01347</td>
       <td>0.00247</td>
       <td>0.000000e+00</td>
-      <td>0.000034</td>
+      <td>0.000028</td>
       <td>N331A</td>
     </tr>
     <tr>
@@ -692,8 +690,8 @@ display(HTML(escape_and_freq.head().to_html()))
       <td>0.03952</td>
       <td>0.01347</td>
       <td>0.00247</td>
-      <td>8.401660e-07</td>
-      <td>0.000034</td>
+      <td>8.597987e-07</td>
+      <td>0.000028</td>
       <td>N331D</td>
     </tr>
     <tr>
@@ -707,7 +705,7 @@ display(HTML(escape_and_freq.head().to_html()))
       <td>0.01347</td>
       <td>0.00247</td>
       <td>0.000000e+00</td>
-      <td>0.000034</td>
+      <td>0.000028</td>
       <td>N331E</td>
     </tr>
     <tr>
@@ -721,7 +719,7 @@ display(HTML(escape_and_freq.head().to_html()))
       <td>0.01347</td>
       <td>0.00247</td>
       <td>0.000000e+00</td>
-      <td>0.000034</td>
+      <td>0.000028</td>
       <td>N331F</td>
     </tr>
     <tr>
@@ -735,7 +733,7 @@ display(HTML(escape_and_freq.head().to_html()))
       <td>0.01347</td>
       <td>0.00247</td>
       <td>0.000000e+00</td>
-      <td>0.000034</td>
+      <td>0.000028</td>
       <td>N331G</td>
     </tr>
   </tbody>
@@ -879,30 +877,22 @@ for name, specs in escape_profiles_config.items():
 
 
 
-    
 ![png](natural_mutations_files/natural_mutations_24_1.png)
-    
 
 
     Plotting average across conditions and saving to results/GISAID_mutations/Vir_S2K146_escape_vs_freq_average.pdf
 
 
 
-    
 ![png](natural_mutations_files/natural_mutations_24_3.png)
-    
 
 
 
-    
 ![png](natural_mutations_files/natural_mutations_24_4.png)
-    
 
 
 
-    
 ![png](natural_mutations_files/natural_mutations_24_5.png)
-    
 
 
 

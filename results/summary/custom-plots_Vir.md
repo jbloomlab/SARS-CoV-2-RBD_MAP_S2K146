@@ -52,7 +52,7 @@ Session info for reproducing environment:
 
     ## R version 3.6.2 (2019-12-12)
     ## Platform: x86_64-pc-linux-gnu (64-bit)
-    ## Running under: Ubuntu 18.04.5 LTS
+    ## Running under: Ubuntu 18.04.4 LTS
     ## 
     ## Matrix products: default
     ## BLAS/LAPACK: /app/software/OpenBLAS/0.3.7-GCC-8.3.0/lib/libopenblas_haswellp-r0.3.7.so
@@ -398,36 +398,36 @@ escapability.
     unique(dt[,.(antibody,antibody_escapability_natural_variants)])
 
     ##      antibody antibody_escapability_natural_variants
-    ##  1: LY-CoV016                           1.460545e-02
+    ##  1: LY-CoV016                           3.312776e-02
     ##  2: COV2-2050                                     NA
     ##  3: COV2-2082                                     NA
     ##  4: COV2-2094                                     NA
     ##  5: COV2-2096                                     NA
-    ##  6: COV2-2130                           4.923373e-04
+    ##  6: COV2-2130                           1.079907e-03
     ##  7: COV2-2165                                     NA
-    ##  8: COV2-2196                           3.864764e-05
+    ##  8: COV2-2196                           4.499613e-05
     ##  9: COV2-2479                                     NA
     ## 10: COV2-2499                                     NA
     ## 11: COV2-2677                                     NA
     ## 12: COV2-2832                                     NA
     ## 13:    CR3022                                     NA
-    ## 14: LY-CoV555                           7.333977e-02
-    ## 15: REGN10933                           1.435003e-03
-    ## 16: REGN10987                           2.007157e-03
-    ## 17:    S2D106                           3.167090e-02
-    ## 18:     S2E12                           1.243446e-04
-    ## 19:     S2H13                           3.493074e-02
-    ## 20:     S2H14                           3.913182e-01
-    ## 21:     S2H58                           3.298240e-02
-    ## 22:     S2H97                           1.058609e-04
+    ## 14: LY-CoV555                           4.566187e-01
+    ## 15: REGN10933                           1.099682e-03
+    ## 16: REGN10987                           3.816646e-03
+    ## 17:    S2D106                           5.328201e-02
+    ## 18:     S2E12                           1.464524e-04
+    ## 19:     S2H13                           6.040229e-02
+    ## 20:     S2H14                           3.428676e-01
+    ## 21:     S2H58                           5.624574e-02
+    ## 22:     S2H97                           1.496050e-04
     ## 23:    S2K146                                     NA
-    ## 24:     S2X16                           4.203098e-02
-    ## 25:    S2X227                           3.889969e-04
-    ## 26:    S2X259                           8.065593e-05
-    ## 27:     S2X35                           1.403077e-04
-    ## 28:     S2X58                           6.869785e-02
-    ## 29:      S304                           6.410466e-04
-    ## 30:      S309                           1.033404e-04
+    ## 24:     S2X16                           6.519137e-02
+    ## 25:    S2X227                           1.126909e-03
+    ## 26:    S2X259                           7.336949e-05
+    ## 27:     S2X35                           1.785515e-04
+    ## 28:     S2X58                           4.533641e-01
+    ## 29:      S304                           4.430829e-04
+    ## 30:      S309                           1.524710e-04
     ##      antibody antibody_escapability_natural_variants
 
     # unique(dt[,.(antibody,antibody_escapability,antibody_escapability_tolerance_weighted,antibody_escapability_natural_variation_weighted,group)])
