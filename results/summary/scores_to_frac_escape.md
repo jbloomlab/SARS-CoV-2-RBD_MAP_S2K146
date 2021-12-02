@@ -113,11 +113,11 @@ print(f"Read {len(escape_scores_homologs)} scores for the homologs.")
 ```
 
     Reading escape scores for primary target SARS-CoV-2 from results/escape_scores/scores.csv
-    Read 1078387 scores for the primary target.
+    Read 1114746 scores for the primary target.
     
     Reading escape scores for homologs from results/escape_scores/scores_homologs.csv
     For homologs, just keeping the following: SARS-CoV-2, GD-Pangolin, RaTG13, SARS-CoV, WIV16, LYRa11
-    Read 360 scores for the homologs.
+    Read 372 scores for the homologs.
 
 
 ## Fit global epistasis models
@@ -214,7 +214,7 @@ with open(models_pickle_file, 'wb') as f:
 ```
 
     Removing variants with substitutions not seen in >=0 single-substitution variants or >=2 variants total.
-    Fitting 120 models using 16 CPUs...
+    Fitting 124 models using 16 CPUs...
     Dumping the model fits to results/escape_scores/epistasis_models.pickle
 
 

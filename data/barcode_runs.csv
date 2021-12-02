@@ -81,3 +81,7 @@ lib1,expt_130-none-0-reference,210526,expt_130,none,0,ng_per_mL,Vir,reference,NA
 lib2,expt_130-none-0-reference,210526,expt_130,none,0,ng_per_mL,Vir,reference,NA,NA,/shared/ngs/illumina/tstarr/210603_D00300_1246_BHLJ3FBCX3/Unaligned/Project_tstarr/expt_130_lib2_ref*.fastq.gz
 lib1,expt_130-S2K146-63-escape,210526,expt_130,S2K146,63,ng_per_mL,Vir,escape,0.071,816032,/shared/ngs/illumina/tstarr/210603_D00300_1246_BHLJ3FBCX3/Unaligned/Project_tstarr/expt130_lib1_Abneg*.fastq.gz
 lib2,expt_130-S2K146-63-escape,210526,expt_130,S2K146,63,ng_per_mL,Vir,escape,0.063,698156,/shared/ngs/illumina/tstarr/210603_D00300_1246_BHLJ3FBCX3/Unaligned/Project_tstarr/expt130_lib2_Abneg*.fastq.gz
+lib1,expt_133-none-0-reference,210914,expt_133,none,0,ng_per_mL,Vir,reference,NA,NA,/shared/ngs/illumina/tstarr/210928_D00300_1332_BHMJ5GBCX3/Unaligned/Project_tstarr/e133_lib1_ref*.fastq.gz
+lib2,expt_133-none-0-reference,210914,expt_133,none,0,ng_per_mL,Vir,reference,NA,NA,/shared/ngs/illumina/tstarr/210928_D00300_1332_BHMJ5GBCX3/Unaligned/Project_tstarr/e133_lib2_ref*.fastq.gz
+lib1,expt_133-S2K146UCA-83-escape,210914,expt_133,S2K146UCA,83,ng_per_mL,Vir,escape,0.241,2922871,/shared/ngs/illumina/tstarr/210928_D00300_1332_BHMJ5GBCX3/Unaligned/Project_tstarr/e133_lib1_Abneg*.fastq.gz
+lib2,expt_133-S2K146UCA-83-escape,210914,expt_133,S2K146UCA,83,ng_per_mL,Vir,escape,0.245,2931431,/shared/ngs/illumina/tstarr/210928_D00300_1332_BHMJ5GBCX3/Unaligned/Project_tstarr/e133_lib2_Abneg*.fastq.gz

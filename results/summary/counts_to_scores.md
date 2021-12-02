@@ -360,6 +360,16 @@ display(HTML(
       <td>22.2</td>
       <td>17.9</td>
     </tr>
+    <tr>
+      <th>expt_133-none-0-reference</th>
+      <td>362.2</td>
+      <td>369.0</td>
+    </tr>
+    <tr>
+      <th>expt_133-S2K146UCA-83-escape</th>
+      <td>104.3</td>
+      <td>90.6</td>
+    </tr>
   </tbody>
 </table>
 
@@ -548,7 +558,7 @@ display(HTML(
   </thead>
   <tbody>
     <tr>
-      <th rowspan="11" valign="top">lib1</th>
+      <th rowspan="12" valign="top">lib1</th>
       <th>expt_24-33-none-0-reference</th>
       <td>0.0049</td>
       <td>SARS-CoV-2</td>
@@ -637,7 +647,15 @@ display(HTML(
       <td>GAT59AAC TTT156TCG</td>
     </tr>
     <tr>
-      <th rowspan="11" valign="top">lib2</th>
+      <th>expt_133-none-0-reference</th>
+      <td>0.0006</td>
+      <td>SARS-CoV-2</td>
+      <td>TTCCAAAATATTGTCA</td>
+      <td>D59N F156S</td>
+      <td>GAT59AAC TTT156TCG</td>
+    </tr>
+    <tr>
+      <th rowspan="12" valign="top">lib2</th>
       <th>expt_24-33-none-0-reference</th>
       <td>0.0011</td>
       <td>SARS-CoV-2</td>
@@ -724,6 +742,14 @@ display(HTML(
       <td>CAGTACAAAAGTATAA</td>
       <td>K87N V173Y</td>
       <td>CTA60CTG AAG87AAC GTC173TAC</td>
+    </tr>
+    <tr>
+      <th>expt_133-none-0-reference</th>
+      <td>0.0002</td>
+      <td>SARS-CoV-2</td>
+      <td>CAATATTTCCGCAATT</td>
+      <td>K56E</td>
+      <td>AAG56GAG</td>
     </tr>
   </tbody>
 </table>
@@ -1535,6 +1561,32 @@ display(HTML(score_sample_df.to_html(index=False)))
       <td>NaN</td>
     </tr>
     <tr>
+      <td>S2K146UCA_83</td>
+      <td>lib1</td>
+      <td>S2K146UCA</td>
+      <td>83</td>
+      <td>ng_per_mL</td>
+      <td>210914</td>
+      <td>expt_133-none-0-reference</td>
+      <td>expt_133-S2K146UCA-83-escape</td>
+      <td>0.241</td>
+      <td>2922871.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>S2K146UCA_83</td>
+      <td>lib2</td>
+      <td>S2K146UCA</td>
+      <td>83</td>
+      <td>ng_per_mL</td>
+      <td>210914</td>
+      <td>expt_133-none-0-reference</td>
+      <td>expt_133-S2K146UCA-83-escape</td>
+      <td>0.245</td>
+      <td>2931431.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
       <td>S2X16_54</td>
       <td>lib1</td>
       <td>S2X16</td>
@@ -2271,6 +2323,27 @@ display(HTML(pre_count_filter_cutoffs.to_html(float_format='%.1f')))
       <td>247.2</td>
       <td>479.8</td>
     </tr>
+    <tr>
+      <th rowspan="2" valign="top">expt_133-none-0-reference</th>
+      <th>lib1</th>
+      <td>38.0</td>
+      <td>119.0</td>
+      <td>153.2</td>
+      <td>195.0</td>
+      <td>226.0</td>
+      <td>261.0</td>
+      <td>362.1</td>
+    </tr>
+    <tr>
+      <th>lib2</th>
+      <td>36.0</td>
+      <td>126.0</td>
+      <td>163.0</td>
+      <td>214.7</td>
+      <td>251.4</td>
+      <td>290.2</td>
+      <td>392.7</td>
+    </tr>
   </tbody>
 </table>
 
@@ -2421,6 +2494,18 @@ display(HTML(pre_count_filter_cutoffs.to_html(float_format='%.1f')))
       <td>expt_130-none-0-reference</td>
       <td>lib2</td>
       <td>209.0</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>expt_133-none-0-reference</td>
+      <td>lib1</td>
+      <td>226.0</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>expt_133-none-0-reference</td>
+      <td>lib2</td>
+      <td>251.4</td>
     </tr>
   </tbody>
 </table>

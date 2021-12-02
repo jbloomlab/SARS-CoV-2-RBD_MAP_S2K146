@@ -345,11 +345,11 @@ strong_sites.to_csv(config['strong_escape_sites'], index=False)
     </tr>
     <tr>
       <th>sensitive</th>
-      <td>76</td>
+      <td>77</td>
     </tr>
     <tr>
       <th>sensitive_max_mut</th>
-      <td>88</td>
+      <td>89</td>
     </tr>
   </tbody>
 </table>

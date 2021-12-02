@@ -244,15 +244,21 @@ for var, selection, lower_clip, upper_clip, desired_min in [
 ```
 
 
+    
 ![png](counts_to_cells_ratio_files/counts_to_cells_ratio_13_0.png)
+    
 
 
 
+    
 ![png](counts_to_cells_ratio_files/counts_to_cells_ratio_13_1.png)
+    
 
 
 
+    
 ![png](counts_to_cells_ratio_files/counts_to_cells_ratio_13_2.png)
+    
 
 
 Now list any samples that fail the minimum counts or counts:cell ratio:

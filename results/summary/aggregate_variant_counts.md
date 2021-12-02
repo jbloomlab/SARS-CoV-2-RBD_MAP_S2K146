@@ -46,7 +46,7 @@ Versions of key software:
 print(f"Using dms_variants version {dms_variants.__version__}")
 ```
 
-    Using dms_variants version 0.8.9
+    Using dms_variants version 0.8.5
 
 
 Ignore warnings that clutter output:
@@ -1452,6 +1452,70 @@ display(HTML(barcode_runs.to_html(index=False)))
       <td>results/counts/expt_130-S2K146-63-escape_lib2_counts.csv</td>
       <td>results/counts/expt_130-S2K146-63-escape_lib2_fates.csv</td>
     </tr>
+    <tr>
+      <td>lib1</td>
+      <td>expt_133-none-0-reference</td>
+      <td>210914</td>
+      <td>expt_133</td>
+      <td>none</td>
+      <td>0</td>
+      <td>ng_per_mL</td>
+      <td>Vir</td>
+      <td>reference</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>expt_133-none-0-reference_lib1</td>
+      <td>results/counts/expt_133-none-0-reference_lib1_counts.csv</td>
+      <td>results/counts/expt_133-none-0-reference_lib1_fates.csv</td>
+    </tr>
+    <tr>
+      <td>lib2</td>
+      <td>expt_133-none-0-reference</td>
+      <td>210914</td>
+      <td>expt_133</td>
+      <td>none</td>
+      <td>0</td>
+      <td>ng_per_mL</td>
+      <td>Vir</td>
+      <td>reference</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>expt_133-none-0-reference_lib2</td>
+      <td>results/counts/expt_133-none-0-reference_lib2_counts.csv</td>
+      <td>results/counts/expt_133-none-0-reference_lib2_fates.csv</td>
+    </tr>
+    <tr>
+      <td>lib1</td>
+      <td>expt_133-S2K146UCA-83-escape</td>
+      <td>210914</td>
+      <td>expt_133</td>
+      <td>S2K146UCA</td>
+      <td>83</td>
+      <td>ng_per_mL</td>
+      <td>Vir</td>
+      <td>escape</td>
+      <td>0.241</td>
+      <td>2922871.0</td>
+      <td>expt_133-S2K146UCA-83-escape_lib1</td>
+      <td>results/counts/expt_133-S2K146UCA-83-escape_lib1_counts.csv</td>
+      <td>results/counts/expt_133-S2K146UCA-83-escape_lib1_fates.csv</td>
+    </tr>
+    <tr>
+      <td>lib2</td>
+      <td>expt_133-S2K146UCA-83-escape</td>
+      <td>210914</td>
+      <td>expt_133</td>
+      <td>S2K146UCA</td>
+      <td>83</td>
+      <td>ng_per_mL</td>
+      <td>Vir</td>
+      <td>escape</td>
+      <td>0.245</td>
+      <td>2931431.0</td>
+      <td>expt_133-S2K146UCA-83-escape_lib2</td>
+      <td>results/counts/expt_133-S2K146UCA-83-escape_lib2_counts.csv</td>
+      <td>results/counts/expt_133-S2K146UCA-83-escape_lib2_fates.csv</td>
+    </tr>
   </tbody>
 </table>
 
@@ -1745,6 +1809,40 @@ display(HTML(fates
       <td>1.3e+06</td>
       <td>4.4e+05</td>
       <td>2.7e+07</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">expt_133-S2K146UCA-83-escape</th>
+      <th>lib1</th>
+      <td>2.2e+05</td>
+      <td>1.0e+06</td>
+      <td>5.6e+05</td>
+      <td>2.0e+05</td>
+      <td>1.0e+07</td>
+    </tr>
+    <tr>
+      <th>lib2</th>
+      <td>1.9e+05</td>
+      <td>8.0e+05</td>
+      <td>5.0e+05</td>
+      <td>1.8e+05</td>
+      <td>8.9e+06</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">expt_133-none-0-reference</th>
+      <th>lib1</th>
+      <td>7.5e+05</td>
+      <td>3.7e+06</td>
+      <td>2.0e+06</td>
+      <td>7.3e+05</td>
+      <td>3.6e+07</td>
+    </tr>
+    <tr>
+      <th>lib2</th>
+      <td>7.6e+05</td>
+      <td>3.3e+06</td>
+      <td>2.0e+06</td>
+      <td>7.6e+05</td>
+      <td>3.6e+07</td>
     </tr>
     <tr>
       <th rowspan="2" valign="top">expt_14-COV2-2094-400-escape</th>
@@ -2380,7 +2478,9 @@ _ = barcode_fate_plot.draw()
 ```
 
 
+    
 ![png](aggregate_variant_counts_files/aggregate_variant_counts_28_0.png)
+    
 
 
 ## Add barcode counts to variant table

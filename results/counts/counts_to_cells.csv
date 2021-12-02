@@ -81,3 +81,7 @@ sample_lib,date,experiment,antibody,concentration,selection,cells_sorted,counts 
 "expt_130-none-0-reference, lib2",210526,expt_130,none,0,reference,,2.65e+07,2.63e+07,,
 "expt_130-S2K146-63-escape, lib1",210526,expt_130,S2K146,63,escape,816032.0,2.21e+06,2.19e+06,2.7129781675228424,2.678685394690404
 "expt_130-S2K146-63-escape, lib2",210526,expt_130,S2K146,63,escape,698156.0,1.75e+06,1.73e+06,2.507157426133987,2.479122144620973
+"expt_133-none-0-reference, lib1",210914,expt_133,none,0,reference,,3.61e+07,3.57e+07,,
+"expt_133-none-0-reference, lib2",210914,expt_133,none,0,reference,,3.6e+07,3.57e+07,,
+"expt_133-S2K146UCA-83-escape, lib1",210914,expt_133,S2K146UCA,83,escape,2922871.0,1.04e+07,1.01e+07,3.5554617360807232,3.470013900716111
+"expt_133-S2K146UCA-83-escape, lib2",210914,expt_133,S2K146UCA,83,escape,2931431.0,8.85e+06,8.68e+06,3.0205762987428324,2.959936972761767

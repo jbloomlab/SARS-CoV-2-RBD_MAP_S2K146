@@ -211,7 +211,7 @@ for name, specs in output_pdbs_config.items():
 
     
     Making PDB mappings for 6m0j to data/pdbs/6M0J.pdb
-    Making mappings for 30 conditions.
+    Making mappings for 31 conditions.
     Mapping to the following chains: E
       Writing B-factor re-assigned PDBs for CB6_400 to:
         results/pdb_outputs/CB6_400_6m0j_total_escape.pdb
@@ -323,6 +323,11 @@ for name, specs in output_pdbs_config.items():
         results/pdb_outputs/S2H97_58_6m0j_max_escape.pdb
         results/pdb_outputs/S2H97_58_6m0j_norm_total_escape.pdb
         results/pdb_outputs/S2H97_58_6m0j_norm_max_escape.pdb
+      Writing B-factor re-assigned PDBs for S2K146UCA_83 to:
+        results/pdb_outputs/S2K146UCA_83_6m0j_total_escape.pdb
+        results/pdb_outputs/S2K146UCA_83_6m0j_max_escape.pdb
+        results/pdb_outputs/S2K146UCA_83_6m0j_norm_total_escape.pdb
+        results/pdb_outputs/S2K146UCA_83_6m0j_norm_max_escape.pdb
       Writing B-factor re-assigned PDBs for S2K146_63 to:
         results/pdb_outputs/S2K146_63_6m0j_total_escape.pdb
         results/pdb_outputs/S2K146_63_6m0j_max_escape.pdb

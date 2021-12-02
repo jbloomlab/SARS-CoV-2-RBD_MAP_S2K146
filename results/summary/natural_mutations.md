@@ -177,7 +177,7 @@ escape_fracs
       <td>...</td>
     </tr>
     <tr>
-      <th>58442</th>
+      <th>60395</th>
       <td>S309_421</td>
       <td>531</td>
       <td>T</td>
@@ -186,7 +186,7 @@ escape_fracs
       <td>0.77760</td>
     </tr>
     <tr>
-      <th>58443</th>
+      <th>60396</th>
       <td>S309_421</td>
       <td>531</td>
       <td>T</td>
@@ -195,7 +195,7 @@ escape_fracs
       <td>0.77760</td>
     </tr>
     <tr>
-      <th>58444</th>
+      <th>60397</th>
       <td>S309_421</td>
       <td>531</td>
       <td>T</td>
@@ -204,7 +204,7 @@ escape_fracs
       <td>0.77760</td>
     </tr>
     <tr>
-      <th>58445</th>
+      <th>60398</th>
       <td>S309_421</td>
       <td>531</td>
       <td>T</td>
@@ -213,7 +213,7 @@ escape_fracs
       <td>0.77760</td>
     </tr>
     <tr>
-      <th>58446</th>
+      <th>60399</th>
       <td>S309_421</td>
       <td>531</td>
       <td>T</td>
@@ -223,7 +223,7 @@ escape_fracs
     </tr>
   </tbody>
 </table>
-<p>58447 rows × 6 columns</p>
+<p>60400 rows × 6 columns</p>
 </div>
 
 
@@ -283,48 +283,12 @@ display(HTML(sitecounts_strong_sites.head(n=20).to_html(index=False)))
   <tbody>
     <tr>
       <td>S2X58_18</td>
-      <td>sensitive_max_mut</td>
+      <td>default</td>
       <td>452</td>
       <td>L</td>
       <td>5.3240</td>
       <td>1383339</td>
       <td>L452R (1374482), L452Q (7516), L452M (1287), L452W (44), L452V (6), L452P (2), L452H (1), L452F (1)</td>
-    </tr>
-    <tr>
-      <td>COV2-2096_400</td>
-      <td>sensitive</td>
-      <td>452</td>
-      <td>L</td>
-      <td>2.2170</td>
-      <td>1383339</td>
-      <td>L452R (1374482), L452Q (7516), L452M (1287), L452W (44), L452V (6), L452P (2), L452F (1), L452H (1)</td>
-    </tr>
-    <tr>
-      <td>LY-CoV555_400</td>
-      <td>sensitive</td>
-      <td>452</td>
-      <td>L</td>
-      <td>4.0150</td>
-      <td>1383339</td>
-      <td>L452R (1374482), L452Q (7516), L452M (1287), L452W (44), L452V (6), L452P (2), L452F (1), L452H (1)</td>
-    </tr>
-    <tr>
-      <td>LY-CoV555_400</td>
-      <td>sensitive_max_mut</td>
-      <td>452</td>
-      <td>L</td>
-      <td>4.0150</td>
-      <td>1383339</td>
-      <td>L452R (1374482), L452Q (7516), L452M (1287), L452W (44), L452V (6), L452P (2), L452F (1), L452H (1)</td>
-    </tr>
-    <tr>
-      <td>S2X58_18</td>
-      <td>sensitive</td>
-      <td>452</td>
-      <td>L</td>
-      <td>5.3240</td>
-      <td>1383339</td>
-      <td>L452R (1374482), L452Q (7516), L452M (1287), L452W (44), L452V (6), L452P (2), L452F (1), L452H (1)</td>
     </tr>
     <tr>
       <td>COV2-2096_400</td>
@@ -336,13 +300,58 @@ display(HTML(sitecounts_strong_sites.head(n=20).to_html(index=False)))
       <td>L452R (1374482), L452Q (7516), L452M (1287), L452W (44), L452V (6), L452P (2), L452H (1), L452F (1)</td>
     </tr>
     <tr>
-      <td>S2X58_18</td>
+      <td>LY-CoV555_400</td>
       <td>default</td>
+      <td>452</td>
+      <td>L</td>
+      <td>4.0150</td>
+      <td>1383339</td>
+      <td>L452R (1374482), L452Q (7516), L452M (1287), L452W (44), L452V (6), L452P (2), L452H (1), L452F (1)</td>
+    </tr>
+    <tr>
+      <td>LY-CoV555_400</td>
+      <td>sensitive</td>
+      <td>452</td>
+      <td>L</td>
+      <td>4.0150</td>
+      <td>1383339</td>
+      <td>L452R (1374482), L452Q (7516), L452M (1287), L452W (44), L452V (6), L452P (2), L452H (1), L452F (1)</td>
+    </tr>
+    <tr>
+      <td>S2X58_18</td>
+      <td>sensitive</td>
       <td>452</td>
       <td>L</td>
       <td>5.3240</td>
       <td>1383339</td>
       <td>L452R (1374482), L452Q (7516), L452M (1287), L452W (44), L452V (6), L452P (2), L452F (1), L452H (1)</td>
+    </tr>
+    <tr>
+      <td>S2X58_18</td>
+      <td>sensitive_max_mut</td>
+      <td>452</td>
+      <td>L</td>
+      <td>5.3240</td>
+      <td>1383339</td>
+      <td>L452R (1374482), L452Q (7516), L452M (1287), L452W (44), L452V (6), L452P (2), L452H (1), L452F (1)</td>
+    </tr>
+    <tr>
+      <td>LY-CoV555_400</td>
+      <td>sensitive_max_mut</td>
+      <td>452</td>
+      <td>L</td>
+      <td>4.0150</td>
+      <td>1383339</td>
+      <td>L452R (1374482), L452Q (7516), L452M (1287), L452W (44), L452V (6), L452P (2), L452H (1), L452F (1)</td>
+    </tr>
+    <tr>
+      <td>COV2-2096_400</td>
+      <td>sensitive</td>
+      <td>452</td>
+      <td>L</td>
+      <td>2.2170</td>
+      <td>1383339</td>
+      <td>L452R (1374482), L452Q (7516), L452M (1287), L452W (44), L452V (6), L452P (2), L452H (1), L452F (1)</td>
     </tr>
     <tr>
       <td>COV2-2096_400</td>
@@ -354,13 +363,22 @@ display(HTML(sitecounts_strong_sites.head(n=20).to_html(index=False)))
       <td>L452R (1374482), L452Q (7516), L452M (1287), L452W (44), L452V (6), L452P (2), L452F (1), L452H (1)</td>
     </tr>
     <tr>
-      <td>LY-CoV555_400</td>
-      <td>default</td>
-      <td>452</td>
-      <td>L</td>
-      <td>4.0150</td>
-      <td>1383339</td>
-      <td>L452R (1374482), L452Q (7516), L452M (1287), L452W (44), L452V (6), L452P (2), L452F (1), L452H (1)</td>
+      <td>S2K146UCA_83</td>
+      <td>sensitive</td>
+      <td>478</td>
+      <td>T</td>
+      <td>0.8090</td>
+      <td>1310032</td>
+      <td>T478K (1308631), T478I (850), T478R (538), T478A (11), T478S (2)</td>
+    </tr>
+    <tr>
+      <td>S2K146UCA_83</td>
+      <td>sensitive_max_mut</td>
+      <td>478</td>
+      <td>T</td>
+      <td>0.8090</td>
+      <td>1310032</td>
+      <td>T478K (1308631), T478I (850), T478R (538), T478A (11), T478S (2)</td>
     </tr>
     <tr>
       <td>S2E12_56</td>
@@ -372,44 +390,53 @@ display(HTML(sitecounts_strong_sites.head(n=20).to_html(index=False)))
       <td>T478K (1308631), T478I (850), T478R (538), T478A (11), T478S (2)</td>
     </tr>
     <tr>
+      <td>S2K146UCA_83</td>
+      <td>sensitive</td>
+      <td>501</td>
+      <td>N</td>
+      <td>10.9800</td>
+      <td>1194469</td>
+      <td>N501Y (1189976), N501T (4302), N501S (74), N501I (61), N501H (41), N501K (9), N501F (3), N501D (1), N501L (1), N501R (1)</td>
+    </tr>
+    <tr>
+      <td>S2K146UCA_83</td>
+      <td>default</td>
+      <td>501</td>
+      <td>N</td>
+      <td>10.9800</td>
+      <td>1194469</td>
+      <td>N501Y (1189976), N501T (4302), N501S (74), N501I (61), N501H (41), N501K (9), N501F (3), N501R (1), N501D (1), N501L (1)</td>
+    </tr>
+    <tr>
+      <td>S2K146UCA_83</td>
+      <td>sensitive_max_mut</td>
+      <td>501</td>
+      <td>N</td>
+      <td>10.9800</td>
+      <td>1194469</td>
+      <td>N501Y (1189976), N501T (4302), N501S (74), N501I (61), N501H (41), N501K (9), N501F (3), N501R (1), N501D (1), N501L (1)</td>
+    </tr>
+    <tr>
+      <td>CB6_400</td>
+      <td>sensitive</td>
+      <td>501</td>
+      <td>N</td>
+      <td>1.4430</td>
+      <td>1194469</td>
+      <td>N501Y (1189976), N501T (4302), N501S (74), N501I (61), N501H (41), N501K (9), N501F (3), N501D (1), N501L (1), N501R (1)</td>
+    </tr>
+    <tr>
       <td>COV2-2499_400</td>
       <td>sensitive_max_mut</td>
       <td>501</td>
       <td>N</td>
       <td>0.5019</td>
       <td>1194469</td>
-      <td>N501Y (1189976), N501T (4302), N501S (74), N501I (61), N501H (41), N501K (9), N501F (3), N501R (1), N501L (1), N501D (1)</td>
-    </tr>
-    <tr>
-      <td>CB6_400</td>
-      <td>sensitive</td>
-      <td>501</td>
-      <td>N</td>
-      <td>1.4430</td>
-      <td>1194469</td>
-      <td>N501Y (1189976), N501T (4302), N501S (74), N501I (61), N501H (41), N501K (9), N501F (3), N501R (1), N501L (1), N501D (1)</td>
-    </tr>
-    <tr>
-      <td>CB6_400</td>
-      <td>sensitive_max_mut</td>
-      <td>501</td>
-      <td>N</td>
-      <td>1.4430</td>
-      <td>1194469</td>
-      <td>N501Y (1189976), N501T (4302), N501S (74), N501I (61), N501H (41), N501K (9), N501F (3), N501D (1), N501R (1), N501L (1)</td>
+      <td>N501Y (1189976), N501T (4302), N501S (74), N501I (61), N501H (41), N501K (9), N501F (3), N501R (1), N501D (1), N501L (1)</td>
     </tr>
     <tr>
       <td>S2H14_105</td>
-      <td>sensitive</td>
-      <td>501</td>
-      <td>N</td>
-      <td>14.6600</td>
-      <td>1194469</td>
-      <td>N501Y (1189976), N501T (4302), N501S (74), N501I (61), N501H (41), N501K (9), N501F (3), N501R (1), N501L (1), N501D (1)</td>
-    </tr>
-    <tr>
-      <td>S2H14_105</td>
-      <td>sensitive_max_mut</td>
+      <td>default</td>
       <td>501</td>
       <td>N</td>
       <td>14.6600</td>
@@ -418,12 +445,12 @@ display(HTML(sitecounts_strong_sites.head(n=20).to_html(index=False)))
     </tr>
     <tr>
       <td>S2H14_105</td>
-      <td>default</td>
+      <td>sensitive_max_mut</td>
       <td>501</td>
       <td>N</td>
       <td>14.6600</td>
       <td>1194469</td>
-      <td>N501Y (1189976), N501T (4302), N501S (74), N501I (61), N501H (41), N501K (9), N501F (3), N501R (1), N501L (1), N501D (1)</td>
+      <td>N501Y (1189976), N501T (4302), N501S (74), N501I (61), N501H (41), N501K (9), N501F (3), N501R (1), N501D (1), N501L (1)</td>
     </tr>
     <tr>
       <td>COV2-2499_400</td>
@@ -432,34 +459,7 @@ display(HTML(sitecounts_strong_sites.head(n=20).to_html(index=False)))
       <td>N</td>
       <td>0.5019</td>
       <td>1194469</td>
-      <td>N501Y (1189976), N501T (4302), N501S (74), N501I (61), N501H (41), N501K (9), N501F (3), N501R (1), N501L (1), N501D (1)</td>
-    </tr>
-    <tr>
-      <td>LY-CoV555_400</td>
-      <td>default</td>
-      <td>484</td>
-      <td>E</td>
-      <td>16.8100</td>
-      <td>194998</td>
-      <td>E484K (185505), E484Q (9029), E484A (190), E484G (121), E484D (95), E484V (38), E484R (18), E484S (1), E484T (1)</td>
-    </tr>
-    <tr>
-      <td>S2E12_56</td>
-      <td>sensitive</td>
-      <td>484</td>
-      <td>E</td>
-      <td>5.2020</td>
-      <td>194998</td>
-      <td>E484K (185505), E484Q (9029), E484A (190), E484G (121), E484D (95), E484V (38), E484R (18), E484T (1), E484S (1)</td>
-    </tr>
-    <tr>
-      <td>LY-CoV555_400</td>
-      <td>sensitive</td>
-      <td>484</td>
-      <td>E</td>
-      <td>16.8100</td>
-      <td>194998</td>
-      <td>E484K (185505), E484Q (9029), E484A (190), E484G (121), E484D (95), E484V (38), E484R (18), E484S (1), E484T (1)</td>
+      <td>N501Y (1189976), N501T (4302), N501S (74), N501I (61), N501H (41), N501K (9), N501F (3), N501L (1), N501D (1), N501R (1)</td>
     </tr>
   </tbody>
 </table>
@@ -565,12 +565,52 @@ for name, specs in escape_profiles_config.items():
   </thead>
   <tbody>
     <tr>
+      <td>S2K146_UCA</td>
+      <td>sensitive_max_mut</td>
+      <td>478</td>
+      <td>T</td>
+      <td>1310032</td>
+      <td>T478K (1308631), T478I (850), T478R (538), T478A (11), T478S (2)</td>
+    </tr>
+    <tr>
+      <td>S2K146_UCA</td>
+      <td>sensitive_max_mut</td>
+      <td>501</td>
+      <td>N</td>
+      <td>1194469</td>
+      <td>N501Y (1189976), N501T (4302), N501S (74), N501I (61), N501H (41), N501K (9), N501F (3), N501R (1), N501D (1), N501L (1)</td>
+    </tr>
+    <tr>
       <td>S2K146</td>
       <td>sensitive_max_mut</td>
       <td>484</td>
       <td>E</td>
       <td>194998</td>
       <td>E484K (185505), E484Q (9029), E484A (190), E484G (121), E484D (95), E484V (38), E484R (18), E484T (1), E484S (1)</td>
+    </tr>
+    <tr>
+      <td>S2K146_UCA</td>
+      <td>sensitive_max_mut</td>
+      <td>439</td>
+      <td>N</td>
+      <td>25270</td>
+      <td>N439K (25257), N439I (7), N439T (2), N439S (2), N439Y (1), N439D (1)</td>
+    </tr>
+    <tr>
+      <td>S2K146_UCA</td>
+      <td>sensitive_max_mut</td>
+      <td>494</td>
+      <td>S</td>
+      <td>12401</td>
+      <td>S494P (11710), S494L (621), S494A (54), S494T (11), S494R (5)</td>
+    </tr>
+    <tr>
+      <td>S2K146_UCA</td>
+      <td>sensitive_max_mut</td>
+      <td>475</td>
+      <td>A</td>
+      <td>1874</td>
+      <td>A475V (1562), A475S (268), A475T (41), A475P (3)</td>
     </tr>
     <tr>
       <td>S2K146</td>
@@ -581,36 +621,28 @@ for name, specs in escape_profiles_config.items():
       <td>A475V (1562), A475S (268), A475T (41), A475P (3)</td>
     </tr>
     <tr>
-      <td>S2K146</td>
+      <td>S2K146_UCA</td>
       <td>sensitive_max_mut</td>
-      <td>456</td>
-      <td>F</td>
-      <td>128</td>
-      <td>F456L (121), F456V (3), F456Y (2), F456I (1), F456C (1)</td>
-    </tr>
-    <tr>
-      <td>S2K146</td>
-      <td>sensitive_max_mut</td>
-      <td>486</td>
-      <td>F</td>
-      <td>100</td>
-      <td>F486L (65), F486S (22), F486I (9), F486Y (3), F486V (1)</td>
-    </tr>
-    <tr>
-      <td>S2K146</td>
-      <td>sensitive_max_mut</td>
-      <td>489</td>
+      <td>449</td>
       <td>Y</td>
-      <td>44</td>
-      <td>Y489H (35), Y489C (5), Y489S (2), Y489F (1), Y489N (1)</td>
+      <td>1618</td>
+      <td>Y449S (926), Y449H (523), Y449N (126), Y449D (29), Y449F (10), Y449V (4)</td>
     </tr>
     <tr>
-      <td>S2K146</td>
+      <td>S2K146_UCA</td>
       <td>sensitive_max_mut</td>
-      <td>487</td>
-      <td>N</td>
-      <td>12</td>
-      <td>N487D (4), N487I (2), N487T (2), N487K (2), N487S (1), N487H (1)</td>
+      <td>455</td>
+      <td>L</td>
+      <td>1336</td>
+      <td>L455F (1316), L455S (13), L455V (3), L455M (2), L455W (2)</td>
+    </tr>
+    <tr>
+      <td>S2K146_UCA</td>
+      <td>sensitive_max_mut</td>
+      <td>453</td>
+      <td>Y</td>
+      <td>1266</td>
+      <td>Y453F (1250), Y453H (9), Y453S (4), Y453C (2), Y453D (1)</td>
     </tr>
   </tbody>
 </table>
@@ -620,7 +652,9 @@ for name, specs in escape_profiles_config.items():
 
 
 
+    
 ![png](natural_mutations_files/natural_mutations_20_3.png)
+    
 
 
 ## Plot correlation between escape and natural frequency
@@ -877,22 +911,30 @@ for name, specs in escape_profiles_config.items():
 
 
 
+    
 ![png](natural_mutations_files/natural_mutations_24_1.png)
+    
 
 
     Plotting average across conditions and saving to results/GISAID_mutations/Vir_S2K146_escape_vs_freq_average.pdf
 
 
 
+    
 ![png](natural_mutations_files/natural_mutations_24_3.png)
+    
 
 
 
+    
 ![png](natural_mutations_files/natural_mutations_24_4.png)
+    
 
 
 
+    
 ![png](natural_mutations_files/natural_mutations_24_5.png)
+    
 
 
 
