@@ -47,6 +47,7 @@ Vir_S2K146:
 Vir_S2K146_S2E12:
   conditions:
     S2K146_63: S2K146
+    S2K146UCA_83: S2K146_UCA
     S2E12_56: S2E12
   plot_auto_identified_sites: sensitive_max_mut
   add_sites: []
