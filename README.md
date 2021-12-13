@@ -1,7 +1,7 @@
 # Mutational antigenic profiling of SARS-CoV-2 RBD against a panel of antibodies targeting diverse RBD epitopes
 Analysis of mutational antigenic profiling of barcoded codon variants of SARS-CoV-2 RBD.
 
-Study and analysis by Tyler Starr, [Jesse Bloom](https://research.fhcrc.org/bloom/en.html), and co-authors. See details in the preprints [here](https://www.biorxiv.org/content/10.1101/2021.04.06.438709v1) and [here](https://www.biorxiv.org/content/10.1101/2021.04.07.438818v1).
+Study and analysis by Tyler Starr, [Jesse Bloom](https://research.fhcrc.org/bloom/en.html), and co-authors. See details in the preprint [here](https://www.biorxiv.org/content/10.1101/2021.10.13.464254v1.abstract).
 
 ## Summary of workflow and results
 For a summary of the workflow and links to key results files, [click here](results/summary/summary.md).
